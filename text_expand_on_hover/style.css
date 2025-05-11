@@ -1,0 +1,35 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+body
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #333;
+	font-family: sans-serif;
+}
+h1
+{
+	font-size: 60px;
+	text-transform: uppercase;
+}
+h1 span
+{
+	display: inline-flex;
+	color: #a2ff34;
+}
+h1 span:nth-child(even)
+{
+	color: #fff;
+	letter-spacing: -1em;
+	overflow: hidden;
+	transition: 0.5s;
+}
+h1:hover span:nth-child(even)
+{
+	letter-spacing: 0;
+}
